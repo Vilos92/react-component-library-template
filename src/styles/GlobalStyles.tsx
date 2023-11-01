@@ -1,4 +1,4 @@
-import { withGlobalStyles } from "../../lib/helpers/twin";
+import {withGlobalStyles} from '../../lib/helpers/twin';
 
 /*
  * Component.
