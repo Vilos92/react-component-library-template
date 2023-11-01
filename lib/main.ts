@@ -2,4 +2,8 @@ export function helloAnything(thing: string): string {
   return `Hello ${thing}!`;
 }
 
-export { Button } from "./components/Button";
+import { Button as ButtonCmp } from "./components/Button";
+import { withGlobalStyles } from "./helpers/twin";
+
+const Button = withGlobalStyles(ButtonCmp);
+export { Button };
