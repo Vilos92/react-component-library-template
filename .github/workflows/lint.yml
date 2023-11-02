@@ -39,7 +39,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-  main:
-    steps:
       - name: Lint
         run: pnpm lint
