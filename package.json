@@ -1,5 +1,10 @@
 {
-  "name": "typerion",
+  "name": "react-component-library-template",
+  "author": "{
+    "name": "Gregory Linscheid",
+    "email": "linscheid.greg@gmail.com",
+    "url": "https://greglinscheid.com"
+  },
   "private": true,
   "version": "0.0.0",
   "packageManager": "pnpm@8.10.2",
