@@ -11,6 +11,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - uses: ./.github/actions/cache-and-install-pnpm@v1
+      - uses: ./.github/actions/cache-and-install-pnpm.yaml
       - name: Prettier
         run: pnpm prettier:check
