@@ -1,4 +1,6 @@
-import trivago from '@trivago/prettier-plugin-sort-imports';
+import {createRequire} from 'node:module';
+
+const require = createRequire(import.meta.url);
 
 export default {
   arrowParens: 'avoid',
@@ -11,5 +13,5 @@ export default {
   importOrder: ['^@core/(.*)$', '^@server/(.*)$', '^@ui/(.*)$', '^[./]'],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
-  plugins: [trivago, 'prettier-plugin-tailwindcss']
+  plugins: [require.resolve('@trivago/prettier-plugin-sort-imports'), 'prettier-plugin-tailwindcss']
 };
