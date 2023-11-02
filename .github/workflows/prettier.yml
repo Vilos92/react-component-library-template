@@ -5,10 +5,10 @@ on:
   - pull_request
 
 jobs:
-  cache-and-install:
+  prettier:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/cache-and-install@v1
+      - uses: ./.github/actions/cache-and-install-pnpm@v1
       - name: Prettier
         run: pnpm prettier:check
