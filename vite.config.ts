@@ -8,7 +8,6 @@ import dts from 'vite-plugin-dts';
 export default defineConfig({
   optimizeDeps: {
     esbuildOptions: {
-      // target: "es2020",
       jsx: 'automatic'
     }
   },
