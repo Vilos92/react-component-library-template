@@ -9,8 +9,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - uses: ./.github/actions/cache-and-install-pnpm.yaml
+      - uses: ./.github/actions/cache-and-install-pnpm
       - name: Prettier
         run: pnpm prettier:check
